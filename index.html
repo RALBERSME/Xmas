@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Cude Xmas Season</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div style="background-color: black; height: '55px'">
+      <audio controls autoplay style="display: inline">
+        <source src="xmas_SoungGalleryBy.mp3" type="audio/mpeg" />
+      </audio>
+      <p
+        style="
+          display: inline;
+          color: white;
+          padding: 5px;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        "
+      >
+        please press play button and scroll down
+      </p>
+    </div>
+
+    <section>
+      <div class="side" id="side1"></div>
+      <div class="side" id="side2"></div>
+    </section>
+
+    <script type="text/javascript">
+      var side1 = document.getElementById("side1");
+      window.addEventListener("scroll", function () {
+        side1.style.left = -+window.pageYOffset + "px";
+      });
+
+      var side2 = document.getElementById("side2");
+      window.addEventListener("scroll", function () {
+        side2.style.left = +window.pageYOffset + "px";
+      });
+    </script>
+  </body>
+</html>
